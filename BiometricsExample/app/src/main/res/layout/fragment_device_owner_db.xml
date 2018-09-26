@@ -1,0 +1,82 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".DeviceOwnerDatabaseFragment" >
+
+    <RelativeLayout
+        android:id="@+id/trustLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_borders" >
+
+        <Button
+            android:id="@+id/enrollTrustButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="@string/enroll_trust" />
+
+        <Button
+            android:id="@+id/deleteTrustButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/enrollTrustButton"
+            android:layout_alignBottom="@+id/enrollTrustButton"
+            android:layout_toRightOf="@+id/enrollTrustButton"
+            android:text="@string/delete_trust" />
+        
+        <Button
+            android:id="@+id/listTrustsButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/enrollTrustButton"
+            android:layout_alignLeft="@+id/deleteTrustButton"
+            android:text="@string/list_trusts" />
+        
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bioLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/trustLayout"
+        android:layout_centerHorizontal="true">
+        
+        <Button
+            android:id="@+id/verifyDeviceOwnerButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/verify" />
+    
+        <Button
+            android:id="@+id/enrollManagerButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/verifyDeviceOwnerButton"
+            android:text="@string/enroll_in_manager" />
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/fingerInfoLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bioLayout"
+        android:background="@drawable/rounded_borders" >
+
+        <TextView
+            android:id="@+id/dodbTextArea"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:gravity="bottom"
+            android:text="" />
+    </RelativeLayout>
+
+</RelativeLayout>

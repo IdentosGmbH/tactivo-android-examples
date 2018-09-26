@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Tactivo Biometrics Example</string>
+    <string name="title_local">Local DB</string>
+    <string name="title_device">Device DB</string>
+    <string name="finger1">Finger 1</string>
+    <string name="finger2">Finger 2</string>
+    <string name="enroll_selected">Enroll Finger</string>
+    <string name="delete_selected">Delete Finger</string>
+    <string name="verify">Verify</string>
+    <string name="practice">Swipe Practice</string>
+    <string name="enroll_trust">Enroll Trust</string>
+    <string name="delete_trust">Remove Trust</string>
+    <string name="list_trusts">List Trusts</string>
+    <string name="enroll_in_manager">Enroll in Manager…</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="exit">Exit</string>
+    <string name="swipe_finger">Swipe finger</string>
+    <string name="swipe_finger_again">Swipe finger again</string>
+    <string name="swipe_too_fast">Swipe too fast!</string>
+    <string name="no_match">Finger did not match!</string>
+    <string name="area_too_small">Area too small!</string>
+    <string name="quality_too_low">Quality too low!</string>
+    <string name="quality">Quality:</string>
+    <string name="area">Area:</string>
+    
+    <string name="error">Error</string>
+    <string name="info">Info</string>
+    
+    <string name="finger_verified">Successfully verified finger</string>
+    <string name="practice_complete">Finger practice completed</string>
+    <string name="enroll_successful">Successfully enrolled"</string>
+    <string name="delete_successful">Successfully deleted</string>
+    <string name="trust_enroll_successful">Trust enrolled successfully</string>
+    <string name="trust_delete_successful">Trust deleted successfully</string>
+    <string name="ver_but_no_trusts">Finger verified but there are no trusts enrolled</string>
+    <string name="ver_but_sec_level">Finger verified but at an unacceptable security level</string>
+    <string name="ver_but_trust_broken">Finger verified but the trust has been broken</string>
+    <string name="verify_successful">Finger verified successfully</string>
+    
+    <string name="no_trusts_enrolled">No trusts enrolled</string>
+    <string name="list_of_trusts">List of trusts:</string>
+    <string name="VALID">VALID</string>
+    <string name="INVALID">INVALID</string>
+    
+    <string name="imageview_enroll_thumbnail1_description">Fingerprint enroll thumbnail 1</string>
+    <string name="imageview_enroll_thumbnail2_description">Fingerprint enroll thumbnail 2</string>
+    <string name="imageview_enroll_thumbnail3_description">Fingerprint enroll thumbnail 3</string>
+    <string name="one">1</string>
+    <string name="two">2</string>
+    <string name="three">3</string>
+    
+    <string name="cdesc_fingerprint_image">Fingerprint image</string>
+</resources>

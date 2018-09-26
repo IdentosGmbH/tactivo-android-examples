@@ -1,0 +1,95 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/rounded_dialog_background" >
+
+    <TextView
+        android:id="@+id/instructionText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/white"
+        android:text="" />
+    
+    <ImageView
+        android:id="@+id/fingerprint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/instructionText"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/cdesc_fingerprint_image"
+        android:src="@drawable/white_fp" />
+
+    <TextView
+        android:id="@+id/errorText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fingerprint"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/white"
+        android:text="" />
+
+    <RelativeLayout
+        android:id="@+id/quality" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/errorText">
+        
+        <TextView
+            android:id="@+id/qualityLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dip"
+            android:textColor="@android:color/white"
+            android:text="@string/quality" />
+        
+        <TextView
+            android:id="@+id/qualityValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/qualityLabel"
+            android:textColor="@android:color/white"
+            android:text="" />
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/area" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/quality">
+        
+        <TextView
+            android:id="@+id/areaLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dip"
+            android:textColor="@android:color/white"
+            android:text="@string/area" />
+        
+        <TextView
+            android:id="@+id/areaValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/areaLabel"
+            android:textColor="@android:color/white"
+            android:text="" />
+        
+    </RelativeLayout>
+        
+    <Button
+        android:id="@+id/cancelButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/area"
+        android:layout_centerHorizontal="true"
+        android:text="@string/exit" />
+
+</RelativeLayout>

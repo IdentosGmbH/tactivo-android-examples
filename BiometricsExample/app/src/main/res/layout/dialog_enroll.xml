@@ -1,0 +1,129 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/rounded_dialog_background" 
+    android:baselineAligned="false">
+
+    <RelativeLayout
+        android:id="@+id/live"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/instructionText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="@android:color/white"
+            android:text="" />
+        
+        <ImageView
+            android:id="@+id/fingerprint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/instructionText"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@string/cdesc_fingerprint_image"
+            android:src="@drawable/white_fp" />
+    
+        <TextView
+            android:id="@+id/errorText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fingerprint"
+            android:layout_centerHorizontal="true"
+            android:textColor="@android:color/white"
+            android:text="" />
+    
+        <Button
+            android:id="@+id/cancelButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/errorText"
+            android:layout_centerHorizontal="true"
+            android:text="@string/cancel" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/live"
+        android:orientation="vertical"
+        android:padding="8dip" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/thumb1"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_centerInParent="true"
+                android:contentDescription="@string/imageview_enroll_thumbnail1_description"
+                android:layout_margin="@dimen/activity_vertical_margin"
+                android:scaleType="centerInside"
+                android:src="@drawable/white_fp" />
+
+            <TextView
+                android:id="@+id/thumb1Number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/one" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/thumb2"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_centerInParent="true"
+                android:contentDescription="@string/imageview_enroll_thumbnail2_description"
+                android:layout_margin="@dimen/activity_vertical_margin"
+                android:scaleType="fitCenter"
+                android:src="@drawable/white_fp" />
+
+            <TextView
+                android:id="@+id/thumb2Number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/two" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/thumb3"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_centerInParent="true"
+                android:contentDescription="@string/imageview_enroll_thumbnail3_description"
+                android:layout_margin="@dimen/activity_vertical_margin"
+                android:scaleType="fitCenter"
+                android:src="@drawable/white_fp" />
+
+            <TextView
+                android:id="@+id/thumb3Number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/three" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>
